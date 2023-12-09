@@ -1,0 +1,23 @@
+body {
+  font-size: 200%;
+}
+
+img {
+  width: 200%;
+  height: auto;
+}
+
+.button {
+  font-size: 200%;
+  padding: 20px 40px;
+}
+
+
+.link-button img {
+  width: 100%;
+}
+
+.link-button .button {
+  font-size: 100%;
+  padding: 10px 20px;
+}
