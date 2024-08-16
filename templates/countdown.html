@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}Countdown{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="static/css/countdown.css">
+{% endblock %}
+
+{% block script %}
+<script src="static/js/countdown.js"></script>
+{% endblock %}
+
+{% block main %}
+<div class="countdown-container">
+
+    <div class="countdown-item">
+        <p id="countdown-days" class="non-zero"></p> 
+        <p class="countdown-separator">d</p>
+      </div>
+      
+      <div class="countdown-item">
+        <p id="countdown-hours" class="non-zero"></p>
+        <p class="countdown-separator">h</p>
+      </div>
+      
+      <div class="countdown-item">
+        <p id="countdown-minutes" class="non-zero"></p>
+        <p class="countdown-separator">m</p>
+      </div>
+      
+      <div class="countdown-item">
+        <p id="countdown-seconds" class="non-zero"></p>
+        <p class="countdown-separator">s</p>
+      </div>
+      
+</div>
+{% endblock %}
