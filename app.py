@@ -1,7 +1,17 @@
-import flask
+from flask import Flask, render_template
+import time
+import datetime
+import datetime
 
-app = flask.Flask(__name__)
+# Read the date string from the file
+with open('static/data/start_date.txt', 'r') as file:
+    START_DATE = file.read().strip()
+
+app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return flask.render_template('countdown.html')
+    if datetime.datetime.now().isoformat() < START_DATE:
+        return render_template('countdown.html')
+        
+    return render_template('homepage.html')
