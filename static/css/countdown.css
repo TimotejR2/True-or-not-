@@ -5,25 +5,25 @@
     padding: 0;
   }
   
-  .countdown-container .countdown-separator {
-    font-size: 5svh;
-    display: inline; /* Ensures separator aligns with the preceding <p> tag */
-    color: var(--primary-color);
-  }
-  
-  .countdown-container .zero {
-    color: var(--secondary-color);
-  }
-  
-  .countdown-container .non-zero {
-    color: var(--primary-color);
-  }
-  
-  .countdown-item {
-    display: block; /* Ensure each div takes a new line */
-    margin-bottom: 10px; /* Optional: add space between lines */
-  }
-  
-  .countdown-item p {
-    display: inline;
-  }
+.countdown-container .countdown-separator {
+  font-size: 5svh;
+  display: inline; /* Ensures separator aligns with the preceding <p> tag */
+  color: var(--primary-color);
+}
+
+.countdown-container .zero {
+  color: var(--secondary-color);
+}
+
+.countdown-container .non-zero {
+  color: var(--primary-color);
+}
+
+.countdown-container .countdown-item {
+  display: block; /* Ensure each div takes a new line */
+  margin-bottom: 10px; /* Optional: add space between lines */
+}
+
+.countdown-container .countdown-item p {
+  display: inline;
+}
