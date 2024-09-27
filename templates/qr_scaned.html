@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}Homepage{% endblock %}
+
+{% block main %}
+<h1>{{ header }}</h1>
+<p>{{ description }}</p>
+{% if location is not none %}
+    <p class="location">{{ location }}</p>
+{% endif %}
+{% endblock %}

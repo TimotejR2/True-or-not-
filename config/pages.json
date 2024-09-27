@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "order": 0,
+            "code": "asdf",
+            "header": "asdf",
+            "description": "asdf",
+            "location": "48.31813715629056, 18.087290906575614",
+            "is_final": false
+        },
+        {
+            "order": 1,
+            "code": "fdsa",
+            "header": "fdsa",
+            "description": "fdsa",
+            "location": null,
+            "is_final": true
+        }
+    ]
+}
