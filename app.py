@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, make_response
 import time
 import datetime
 import datetime
@@ -19,14 +19,15 @@ def index():
 
 @app.route('/qr', methods=['GET'])
 def qr_scaned():
-    # return template data based on pages.json
     with open('config/pages.json', 'r') as file:
         code = request.args.get('code')
         data = file.read()
         pages = json.loads(data)['pages']
         for page in pages:
             if page['code'] == code:
-                return render_template('qr_scaned.html', **page)
+                resp = make_response(render_template('qr_scaned.html', **page))
+                resp.set_cookie('code', code, samesite='Lax')
+                return resp
         
     
     return render_template('qr.html')

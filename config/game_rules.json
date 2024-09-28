@@ -1,0 +1,6 @@
+{
+    "game_name": "True. or not?",
+    "players"   : 2,
+    "levels_order_matters": false,
+    "all_levels_needed": false
+}
