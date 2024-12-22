@@ -21,6 +21,15 @@ body .location {
   font-family: 'Orbitron', sans-serif;
 }
 
+body .text_input {
+  text-align: center;
+  font-size: 3vw;
+  display: block;
+  margin: 0 auto;
+  border-radius: 2vw;
+  padding: 1vw;
+}
+
 body .big-button {
   text-align: center;
   font-size: 3vw;

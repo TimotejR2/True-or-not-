@@ -7,7 +7,10 @@
 <p>Bol si vybraný na jedinečnú misiu</p>
 <p>Pred začiatkom súhlas s úplnou mlčanlivosťou kliknutím na tlačidlo nižšie</p>
 <div class="location">48.31813715629056, 18.087290906575614</div>
-<div class="button-container">
-    <button class="big-button">Začať misiu</button>
-</div>
+<form action="/" method="post">
+    <input type="text" class="text_input" placeholder="Tvoja prezývka" name="name" required>
+    <div class="button-container">
+        <input class="big-button" type="submit" value="Začať misiu">
+    </div>
+</form>
 {% endblock %}
